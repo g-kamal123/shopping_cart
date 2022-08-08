@@ -29,16 +29,20 @@ function Shopping() {
     setCart([])
     setLength(0)
   }
+  const deleteCartItemHandler =(val)=>{
+    setCart(cart.filter((item)=>item!==val))
+  }
   console.log(cartlength)
   return (
     <div>
-        <Header cartLength={cartlength}/>
+        <Header cartLength={cart}/>
         <Routes>
             <Route path='/' element={<Home 
             addedToCart={sendToCart}/>}/>
             <Route path='/cart' element={<Cart 
             cartdata={cart}
-            empty={emptiedCart}/>}
+            empty={emptiedCart}
+            deleteCartItem={deleteCartItemHandler}/>}
             />
         </Routes>
         <Footer />

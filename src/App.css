@@ -112,12 +112,14 @@ button{
 .cart ul li{
   display: flex;
   /* justify-content: space-between; */
+  align-items: center;
   width: inherit;
   gap: 2rem;
   padding: 1%;
   box-shadow: 0 4px 8px rgb(0,0,0,0.1);
   border-radius: 10px;
   background-color: rgb(228, 228, 155);
+  width: 21rem;
   /* color: whitesmoke; */
 }
 .cart ul li img{
@@ -173,4 +175,9 @@ button{
 }
 .len{
   color: red;
+}
+@media (max-width:760px){
+  .cart ul li{
+    width: 15rem;
+  }
 }

@@ -10,7 +10,7 @@ function Header(props) {
                 <Link to='/'>Home</Link>
             </li>
             <li>
-                <Link to='/cart'>Cart<span className='len'>{props.cartLength}</span></Link>
+                <Link to='/cart'>Cart<span className='len'>{props.cartLength.length}</span></Link>
             </li>
         </ul>
     </nav>
