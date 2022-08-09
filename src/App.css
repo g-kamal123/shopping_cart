@@ -108,6 +108,7 @@ button{
   /* justify-content: space-between; */
   gap: 5rem;
   padding: 5%;
+  min-height: 75vh;
 }
 .cart ul li{
   display: flex;
@@ -116,15 +117,16 @@ button{
   width: inherit;
   gap: 2rem;
   padding: 1%;
+  padding-right: 2rem;
   box-shadow: 0 4px 8px rgb(0,0,0,0.1);
   border-radius: 10px;
   background-color: rgb(228, 228, 155);
-  width: 21rem;
+  width: fit-content;
   /* color: whitesmoke; */
 }
 .cart ul li img{
-  height: 20vh;
-  width: 15vw;
+  height: 7rem;
+  width: 7rem;
   border-radius: 5px;
 }
 .cart .content{
@@ -132,6 +134,7 @@ button{
   flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
+  width: 6rem;
 }
 .counter{
   display: flex;
@@ -145,7 +148,7 @@ button{
 .bill{
   font-size: 2rem;
   font-weight: 800;
-  padding: 10%;
+  padding: 5%;
   background-color: aquamarine;
   border-radius: 15px;
   display: flex;
@@ -153,6 +156,10 @@ button{
   align-items: center;
   gap: 2rem;
   margin-bottom: 2%;
+  height: fit-content;
+  width: fit-content;
+  position: sticky;
+  top: 4rem;
 }
 .bill button{
   border: none;
@@ -172,12 +179,14 @@ button{
   flex-direction: column;
   padding: 2%;
   align-items: center;
+  /* position: fixed; */
+  /* bottom: 0; */
 }
 .len{
   color: red;
 }
 @media (max-width:760px){
   .cart ul li{
-    width: 15rem;
+    /* width: 15rem; */
   }
 }

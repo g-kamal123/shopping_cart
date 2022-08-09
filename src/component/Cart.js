@@ -43,9 +43,15 @@ function Cart(props) {
               </div>
             </div>
             <i
-            onClick={()=>props.deleteCartItem(item)}
+              onClick={() => props.deleteCartItem(item)}
               className="fa-solid fa-trash-can"
-              style={{ height: "fit-content", color:'red',fontSize:'1.4rem', cursor:'pointer',width:'1rem' }}
+              style={{
+                height: "fit-content",
+                color: "red",
+                fontSize: "1.4rem",
+                cursor: "pointer",
+                width: "1rem",
+              }}
             ></i>
           </li>
         ))}
